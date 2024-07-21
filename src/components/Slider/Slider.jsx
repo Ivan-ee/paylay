@@ -81,8 +81,8 @@ export const Slider = () => {
                         <div className={`button ${selectedItemId === 3 ? 'active' : ''}`} onClick={() => handleClick(3)}>Онлайн-касса</div>
                         <div className={`button ${selectedItemId === 4 ? 'active' : ''}`} onClick={() => handleClick(4)}>Модули CMS</div>
                     </div>
-                    <div className={`button ${selectedItemId === 5 ? 'active' : ''}`} onClick={() => handleClick(5)}>Оплата в мобильном приложении</div>
-                    <div className={`button ${selectedItemId === 6 ? 'active' : ''}`} onClick={() => handleClick(6)}>Оплата на сайте с индивидуальным дизайном</div>
+                    <div className={`button no ${selectedItemId === 5 ? 'active' : ''}`} onClick={() => handleClick(5)}>Оплата в мобильном приложении</div>
+                    <div className={`button no ${selectedItemId === 6 ? 'active' : ''}`} onClick={() => handleClick(6)}>Оплата на сайте с индивидуальным дизайном</div>
                 </div>
             </div>
 

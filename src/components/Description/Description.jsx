@@ -29,8 +29,9 @@ export const Description = () => (
                         <div className={'regular_h4'}>Партнеров</div>
                     </div>
 
-                    <img className={'phone'} src={phone} alt={'phone'}/>
+
                 </div>
+                <img className={'phone'} src={phone} alt={'phone'}/>
             </div>
         </div>
         <DescriptionBtn/>
