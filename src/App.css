@@ -1426,6 +1426,8 @@
     }
 
     .qa {
+        margin-bottom: 80px;
+
         flex-direction: column;
 
         .title {
@@ -2177,6 +2179,10 @@
         }
     }
 
+    .qa {
+        margin-bottom: 120px;
+    }
+
 }
 
 @media (min-width: 1279px) {
@@ -2467,13 +2473,14 @@
     }
 
     .qa {
+        margin-bottom: 135px;
         flex-direction: row;
 
-        .title{
+        .title {
             flex: 0.7;
         }
 
-        .main{
+        .main {
             flex: 1.3;
         }
     }
