@@ -53,7 +53,7 @@ export const Slider = () => {
     const selectedItem = data.find(item => item.id === selectedItemId);
 
     return (
-        <section className="slider" id={'products'}>
+        <section className="slider page-container" id={'products'}>
             <div className="title medium_h1">
                 PayLay — лучший партнер<br/>
                 для обработки платежей
@@ -72,21 +72,36 @@ export const Slider = () => {
                         </div>
                     </div>
                 </div>
+                <div className="button mobile">
+                    Узнать больше
+                </div>
                 <div className="buttons-container">
                     <div className="buttons">
-                        <div className={`button ${selectedItemId === 1 ? 'active' : ''}`} onClick={() => handleClick(1)}>Оплата на сайте</div>
-                        <div className={`button ${selectedItemId === 2? 'active' : ''}`} onClick={() => handleClick(2)}>Ссылка на оплату</div>
+                        <div className={`button ${selectedItemId === 1 ? 'active' : ''}`}
+                             onClick={() => handleClick(1)}>Оплата на сайте
+                        </div>
+                        <div className={`button ${selectedItemId === 2 ? 'active' : ''}`}
+                             onClick={() => handleClick(2)}>Ссылка на оплату
+                        </div>
                     </div>
                     <div className="buttons">
-                        <div className={`button ${selectedItemId === 3 ? 'active' : ''}`} onClick={() => handleClick(3)}>Онлайн-касса</div>
-                        <div className={`button ${selectedItemId === 4 ? 'active' : ''}`} onClick={() => handleClick(4)}>Модули CMS</div>
+                        <div className={`button ${selectedItemId === 3 ? 'active' : ''}`}
+                             onClick={() => handleClick(3)}>Онлайн-касса
+                        </div>
+                        <div className={`button ${selectedItemId === 4 ? 'active' : ''}`}
+                             onClick={() => handleClick(4)}>Модули CMS
+                        </div>
                     </div>
-                    <div className={`button no ${selectedItemId === 5 ? 'active' : ''}`} onClick={() => handleClick(5)}>Оплата в мобильном приложении</div>
-                    <div className={`button no ${selectedItemId === 6 ? 'active' : ''}`} onClick={() => handleClick(6)}>Оплата на сайте с индивидуальным дизайном</div>
+                    <div className={`button no ${selectedItemId === 5 ? 'active' : ''}`}
+                         onClick={() => handleClick(5)}>Оплата в мобильном приложении
+                    </div>
+                    <div className={`button no ${selectedItemId === 6 ? 'active' : ''}`}
+                         onClick={() => handleClick(6)}>Оплата на сайте с индивидуальным дизайном
+                    </div>
                 </div>
             </div>
 
-            <div className="button">
+            <div className="button pc">
                 Узнать больше
             </div>
         </section>
