@@ -451,13 +451,13 @@
 
             border-radius: 30px;
 
-            .title {
-                margin: 50px 50px 16px;
-            }
+            /*.title {*/
+            /*    margin: 50px 50px 16px;*/
+            /*}*/
 
-            .text {
-                margin: 50px 50px 100px;
-            }
+            /*.text {*/
+            /*    margin: 50px 50px 100px;*/
+            /*}*/
 
             .image1 {
                 position: relative;
@@ -475,10 +475,6 @@
                 top: -64px;
                 right: 35px;
             }
-        }
-
-        .block:nth-of-type(1) {
-            margin-right: 20px;
         }
     }
 }
@@ -1225,6 +1221,7 @@
 
     .why-me {
         margin-bottom: 80px;
+
         .blocks {
             gap: 10px;
             flex-direction: column;
@@ -1242,13 +1239,63 @@
                     flex-wrap: wrap;
                     gap: 14px;
 
-                    .images-block, .images-block-2 {
+                    .images-block {
                         display: flex;
                         flex-direction: row;
                         flex-wrap: wrap;
 
                         gap: 14px;
+
+                        .image1 {
+                            width: 100px;
+                            height: 50px;
+                        }
+
+                        .image2 {
+                            width: 140px;
+                            height: 50px;
+                        }
+
                     }
+                }
+            }
+        }
+    }
+
+    .up {
+        margin-bottom: 80px;
+        .title {
+            .title-span {
+                margin-left: 10vw;
+                margin-top: 15px;
+
+                width: 150px;
+                height: 50px;
+            }
+        }
+
+        .blocks {
+            flex-direction: column;
+            gap: 10px;
+
+            .block {
+                width: auto;
+
+                padding: 30px;
+
+                .title {
+                    margin-bottom: 16px;
+                }
+
+                .text {
+                    margin-bottom: 30px;
+                }
+
+                .image1, .image2 {
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
                 }
             }
         }
@@ -1317,6 +1364,17 @@
         .pc {
             display: none;
         }
+    }
+
+    .up {
+        .title {
+            .title-span {
+                margin-left: 69px;
+                margin-top: 0;
+
+            }
+        }
+
     }
 
 }
@@ -1555,6 +1613,36 @@
             }
         }
     }
+
+    .up {
+        .up {
+            .title {
+                .title-span {
+                    margin-left: 69px;
+                    margin-top: 0;
+
+                }
+            }
+
+        }
+
+        .blocks {
+            flex-direction: row;
+            gap: 20px;
+
+            .block {
+                width: calc(50% - 10px);
+
+                .title {
+                    font-size: 24px !important;
+                }
+
+                .text {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 959px) {
@@ -1614,6 +1702,7 @@
 
     .slider {
         margin-bottom: 120px;
+
         .content {
             flex-direction: row;
             gap: 20px;
@@ -1653,6 +1742,20 @@
 
         .pc {
             display: flex;
+        }
+    }
+
+    .up {
+        margin-bottom: 120px;
+        .blocks {
+
+            .block {
+                padding: 50px;
+
+                .image1, .image2 {
+                    width: 120%;
+                }
+            }
         }
     }
 
@@ -1816,10 +1919,42 @@
 
     .why-me {
         margin-bottom: 135px;
+
         .blocks {
 
             .block.s {
                 height: 100% !important;
+            }
+        }
+    }
+
+    .up {
+        margin-bottom: 135px;
+        .blocks {
+            .block {
+                width: calc(50% - 10px);
+                position: relative;
+                max-height: 620px;
+                height: 620px;
+
+                box-sizing: border-box;
+
+                .image1 {
+                    position: relative;
+                    height: auto;
+
+                    left: -119px;
+                    width: 120%;
+                }
+
+                .image2 {
+                    width: 150%;
+                    height: auto;
+                    position: relative;
+                    top: -34px;
+                    left: -137px;
+                    right: 34px;
+                }
             }
         }
     }

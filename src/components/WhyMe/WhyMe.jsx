@@ -47,11 +47,9 @@ export const WhyMe = () => (
                         <img src={image6} className={'image'} alt={'image'}/>
                         <img src={image7} className={'image'} alt={'image'}/>
                         <img src={image8} className={'image'} alt={'image'}/>
-                    </div>
-                    <div className={'images-block-2'}>
                         <img src={image9} className={'image1'} alt={'image'}/>
-                        <img src={image10} className={'image'} alt={'image'}/>
-                        <img src={image11} className={'image'} alt={'image'}/>
+                        <img src={image10} className={'image2'} alt={'image'}/>
+                        <img src={image11} className={'image2'} alt={'image'}/>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@ import image1 from '../../assets/Mockup/mockup.png'
 import image2 from '../../assets/Mockup/mockup2.png'
 
 export const Up = () => (
-    <div className={'up'} id={'opportunities'}>
+    <div className={'up page-container'} id={'opportunities'}>
         <div className={'title medium_h1'}>
             Повышайте доходы<br/>
             вашего бизнеса c <span className={'title-span medium_h3'}>PayLay</span>
