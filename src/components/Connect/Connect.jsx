@@ -3,7 +3,7 @@ import image2 from '../../assets/Connect/online.png'
 import image3 from '../../assets/Connect/office.png'
 
 export const Connect = () => (
-    <div className="connect">
+    <div className="connect page-container">
         <div className="title medium_h1">
             Подключим ваш бизнес <span className={'title-span'}>быстро</span>
         </div>
