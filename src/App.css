@@ -1111,6 +1111,7 @@
     }
 
     .description {
+        margin-bottom: 80px;
         .description-main {
             background: linear-gradient(to right top, var(--color-gren-1), rgb(255 255 255 / 20%)), linear-gradient(to right, var(--color-gren-1), var(--color-gren-2));
             height: auto;
@@ -1199,6 +1200,7 @@
     }
 
     .description {
+        margin-bottom: 80px;
         .description-button-buttons {
             flex-direction: row;
 
@@ -1262,6 +1264,7 @@
     }
 
     .description {
+        margin-bottom: 120px;
         .description-main {
             background: linear-gradient(to right top, var(--color-gren-1), rgba(255, 255, 255, 0.65)),
             linear-gradient(to right, var(--color-gren-1), var(--color-gren-2));
@@ -1356,6 +1359,7 @@
     }
 
     .description {
+        margin-bottom: 120px;
         .description-main {
 
             height: 400px;
@@ -1436,6 +1440,7 @@
     }
 
     .description {
+        margin-bottom: 130px;
         .description-main {
 
             height: 527px;
