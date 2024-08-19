@@ -11,7 +11,9 @@ export const Header = () => {
             <Logo/>
             <Buttons/>
             <SpecialBtn style={'special-button-green'}/>
-            <Burger/>
+            <div className="bgr">
+                <Burger/>
+            </div>
         </header>
     )
 }
