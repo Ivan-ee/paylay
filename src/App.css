@@ -1,8 +1,3 @@
-#root {
-    max-width: 1280px;
-    margin: 0 auto;
-    text-align: center;
-}
 
 .special-button {
     cursor: pointer;
@@ -49,8 +44,7 @@
     justify-content: space-between;
     align-items: center;
 
-    /*height: 100px;*/
-    padding: 16px 50px 14px 50px;
+    padding: 16px 0 14px 0;
     margin-bottom: 100px;
 
     position: sticky;
@@ -63,14 +57,14 @@
 
     .buttons {
         display: flex;
+        gap: 20px;
 
         .button {
             color: var(--color-black-2);
-            margin: 0 10px;
 
             cursor: pointer;
 
-            a{
+            a {
                 color: var(--color-black-2);
                 transition: 0.3s;
 
@@ -79,7 +73,7 @@
         }
 
         .button:hover {
-            a{
+            a {
                 color: var(--color-black-1);
             }
 
@@ -89,7 +83,7 @@
 }
 
 .special-button-green {
-    a{
+    a {
         color: var(--color-gren-1);
         text-decoration: none;
     }
@@ -98,17 +92,19 @@
 }
 
 .special-button-green:hover {
-    a{
+    a {
         color: var(--color-white-1);
     }
+
     background-color: var(--color-gren-1);
 
 }
 
 .special-button-green:active {
-    a{
+    a {
         color: var(--color-white-1);
     }
+
     background-color: var(--color-gren-2);
 
 }
@@ -147,12 +143,12 @@
     }
 
     .description-btn {
-        a{
+        a {
             color: var(--color-black-1);
             text-decoration: none;
         }
-        background-color: var(--color-white-1);
 
+        background-color: var(--color-white-1);
 
 
         margin-bottom: 40px;
@@ -298,7 +294,7 @@
                 box-sizing: border-box;
                 cursor: pointer;
 
-              margin-bottom: 20px;
+                margin-bottom: 20px;
 
                 height: 50px;
                 width: 100%;
@@ -316,15 +312,15 @@
                 transition: 0.3s;
             }
 
-            .button:nth-child(odd){
+            .button:nth-child(odd) {
                 margin-right: 10px;
             }
 
-            .button:nth-child(even){
+            .button:nth-child(even) {
                 margin-left: 10px;
             }
 
-            .button.no{
+            .button.no {
                 margin-right: 0;
                 margin-left: 0;
             }
@@ -425,7 +421,7 @@
                         height: 50px;
                     }
 
-                    .image1{
+                    .image1 {
                         margin-right: 14px;
                         margin-bottom: 14px;
 
@@ -446,7 +442,7 @@
 
 
         .block.s {
-            height: 100%!important;
+            height: 100% !important;
         }
     }
 }
@@ -967,7 +963,7 @@
 
                 margin-left: 120px;
 
-                .text{
+                .text {
                     margin-bottom: 30px;
                     cursor: pointer;
 
@@ -978,35 +974,35 @@
                     transition: all .3s;
                 }
 
-                .text:hover{
+                .text:hover {
                     color: var(--color-black-1);
                 }
 
-                .row{
+                .row {
                     color: var(--color-gray-2);
                 }
             }
         }
 
-        .two{
+        .two {
 
             text-align: right;
 
             display: grid;
             align-items: end;
 
-            .title{
+            .title {
                 text-align: right;
                 color: var(--color-black-1);
                 margin-bottom: 5px;
             }
 
-            .text{
+            .text {
                 color: var(--color-black-2);
                 margin-bottom: 20px;
             }
 
-            .text-1{
+            .text-1 {
                 color: var(--color-black-2);
             }
 
@@ -1015,6 +1011,201 @@
 
     }
 }
+
+.page-container {
+    box-sizing: border-box;
+
+    width: auto;
+
+    margin: 0 auto;
+}
+
+.burger {
+    position: relative;
+    z-index: 100;
+
+    background-color: var(--color-gren-1);
+
+    border-radius: 8px;
+
+    color: var(--color-white-1);
+
+    cursor: pointer;
+}
+
+.nav {
+    padding: 20px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    background-color: white;
+    transform: translateX(100%);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    height: 100vh;
+    width: 300px;
+
+    transition: all 0.3s ease-in-out;
+
+    text-align: right;
+
+    .content {
+
+        margin-top: 70px;
+        margin-bottom: 90px;
+
+        .text {
+            margin-bottom: 30px;
+
+            color: var(--color-black-2);
+            font-size: 16px;
+            font-weight: normal;
+
+            a {
+                text-decoration: none;
+                color: var(--color-black-2);
+            }
+        }
+    }
+}
+
+.nav.active {
+    box-shadow: 1px 1px 600px var(--color-black-1);
+
+    transform: translateX(0);
+}
+
+@media (min-width: 319px) {
+    .page-container {
+        max-width: 479px;
+        padding: 0 20px;
+    }
+
+    .header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .buttons, .special-button {
+            display: none;
+        }
+
+        .logo {
+            font-size: 17px !important;
+
+            .round {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .nav {
+            .special-button {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (min-width: 479px) {
+    .page-container {
+        max-width: 767px;
+        padding: 0 20px;
+    }
+
+    .header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+}
+
+@media (min-width: 767px) {
+    .page-container {
+        max-width: 768px;
+        padding: 0 40px;
+    }
+
+    .header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        gap: 10px;
+        .buttons, .special-button {
+            display: flex;
+            align-items: center;
+        }
+
+
+        .burger, .nav {
+            display: none;
+        }
+
+        .logo {
+            font-size: 13px !important;
+            letter-spacing: 4px;
+
+            .round {
+                width: 40px;
+                height: 40px;
+
+                margin-left: 0;
+            }
+        }
+
+        .special-button{
+            height: 40px;
+            width: 150px;
+        }
+    }
+
+}
+
+@media (min-width: 959px) {
+    .page-container {
+        max-width: 960px;
+    }
+
+}
+
+@media (min-width: 1279px) {
+    .page-container {
+        max-width: 1280px;
+        padding: 0 50px;
+    }
+
+    .header {
+        padding-top: 16px;
+        padding-bottom: 14px;
+
+        .logo {
+            font-size: 24px !important;
+            letter-spacing: 6px;
+
+            .round {
+
+                width: 70px;
+                height: 70px;
+
+                margin-left: 4px;
+                padding-left: 4px;
+            }
+        }
+
+        .special-button{
+            width: 180px;
+            height: 60px;
+        }
+    }
+
+}
+
+
 
 
 
