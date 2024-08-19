@@ -14,7 +14,7 @@ import cursor from '../../assets/Any/arrow-link.png'
 
 
 export const Any = () => (
-    <div className="any" id={'busines'}>
+    <div className="any page-container" id={'busines'}>
         <div className="title medium_h1">
             Любой бизнес с PayLay
         </div>
