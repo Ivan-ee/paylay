@@ -13,7 +13,7 @@ import image10 from '../../assets/WhyMe/rass.png'
 import image11 from '../../assets/WhyMe/mir_pay.png'
 
 export const WhyMe = () => (
-    <div className="why-me">
+    <div className="why-me page-container">
         <div className="title medium_h1">
             Почему выбирают нас?
         </div>
@@ -34,8 +34,6 @@ export const WhyMe = () => (
                     платежей
                 </div>
             </div>
-        </div>
-        <div className="blocks">
             <div className="block">
                 <img src={image3} className={'icon'} alt={'icon'}/>
                 <div className={'title medium_h3'}>Весь мир в вашем кармане</div>
@@ -57,6 +55,7 @@ export const WhyMe = () => (
                     </div>
                 </div>
             </div>
+
             <div className="block s">
                 <img src={image4} className={'icon'} alt={'icon'}/>
                 <div className={'title medium_h3'}>Мы больше, чем банк</div>
