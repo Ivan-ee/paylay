@@ -48,7 +48,7 @@ export const Form = () => {
     };
 
     return (
-        <div className="form" id={'btn'}>
+        <div className="form page-container" id={'btn'}>
             <div className="blocks">
                 <div className="block">
                     <div className="title medium_h1">
@@ -70,7 +70,6 @@ export const Form = () => {
                             value={formData.name}
                             onChange={handleChange}
                         />
-                        {/*{errors.name && <span className="error-message">Обязательное поле</span>}*/}
                         <input
                             className={`input regular_h4 ${errors.email ? 'err' : ''}`}
                             placeholder={'Почта'}
@@ -98,7 +97,7 @@ export const Form = () => {
                             onChange={handleChange}
                         />
                         {/*{errors.website && <span className="big-error-message">Обязательное поле</span>}*/}
-                        <div className={'btn regular_h4'} onClick={handleSubmit}>Узнать больше</div>
+                        <div className={'btn regular_h4'} onClick={handleSubmit}>Отправить заявку</div>
                         <div className={'text light_h5'}>
                             Нажимая кнопку «Отправить заявку», вы соглашаетесь
                             с <span className={'green'}>политикой конфиденциальности</span> и <span className={'green'}>пользовательским соглашением</span>
