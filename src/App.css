@@ -2197,6 +2197,14 @@
             }
         }
     }
+
+    .connect{
+        padding: 70px 100px;
+
+        .blocks{
+            gap: 16px;
+        }
+    }
 }
 
 
