@@ -60,12 +60,12 @@ export const QA = () => {
     };
 
     return (
-        <div className="qa" id={'faq'}>
+        <div className="qa page-container" id={'faq'}>
             <div className="title medium_h1">
-                Ответим<br/>
-                на вопросы
+                Ответим
+                на вопросы
             </div>
-            <div className="">
+            <div className="main">
                 {data.map((item, index) => (
                     <AccordionItem
                         key={index}
