@@ -5,12 +5,12 @@ import icon2 from '../../assets/Footer/icon-vk.png';
 import icon3 from '../../assets/Footer/icon-vc.png';
 
 export const Footer = () => (
-    <div className="footer" id={'cotnact'}>
+    <div className="footer page-container" id={'cotnact'}>
         <div className="title medium_h1">
             Будем на связи
         </div>
 
-        <div className="container">
+        <div className="container pc">
             <div className="main-row">
                 <div className="third-row">
                     <div className="row"><Logo/></div>
@@ -44,7 +44,6 @@ export const Footer = () => (
             <div className="two">
                 <div>
 
-
                     <div className={'block'}>
                         <div className={'title light_h5'}>Технический отдел</div>
                         <div className={'text regular_h4'}>help@paylay.com</div>
@@ -59,6 +58,47 @@ export const Footer = () => (
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div className="mobile">
+            <div className="logot">
+                <Logo/>
+                <div>
+                    <img className={'image'} src={icon1} alt={'image'}/>
+                    <img className={'image'} src={icon2} alt={'image'}/>
+                    <img className={'image'} src={icon3} alt={'image'}/>
+                </div>
+            </div>
+            <div className={'text'}>
+                <div className={'block'}>
+                    <div className={'title light_h5'}>Технический отдел</div>
+                    <div className={'text regular_h4'}>help@paylay.com</div>
+                </div>
+                <div className={'block'}>
+                    <div className={'title light_h5'}>Коммерческий отдел</div>
+                    <div className={'text regular_h4'}>sales@paylay.com</div>
+                </div>
+                <div className={'block'}>
+                    <div className={'title light_h5'}>Отдел маркетинга</div>
+                    <div className={'text-1 regular_h4'}>pr@paylay.com</div>
+                </div>
+            </div>
+            <div className="bottom">
+                <div className="text regular_h4">
+                    Документы
+                </div>
+                <div className="text regular_h4">
+                    Политика конфиденциальности
+                </div>
+                <div className="text regular_h4">
+                    Пользовательское соглашение
+                </div>
+                <div className="text regular_h4">
+                    Сертификат PCI DSS PayLay
+                </div>
+            </div>
+            <SpecialBtn style={'special-button-footer'}/>
+            <div className={'spec'}> © PayLay 2024. All rights reserved.</div>
         </div>
     </div>
 )

@@ -109,6 +109,23 @@
 
 }
 
+.special-button-footer {
+    background-color: var(--color-gren-1);
+
+    margin: 20px auto;
+
+    a {
+        color: var(--color-white-1);
+        text-decoration: none;
+    }
+
+    transition: all .3s;
+}
+
+.special-button-footer:hover {
+    background-color: var(--color-gren-2);
+}
+
 
 .description-main {
     margin-bottom: 23px;
@@ -1452,6 +1469,73 @@
             }
         }
     }
+
+    .footer {
+        .pc {
+            display: none;
+        }
+
+        .mobile {
+
+            text-align: center;
+
+            .logot {
+                margin-bottom: 30px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .logo {
+                    margin-bottom: 20px;
+                }
+
+                .image {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                }
+            }
+
+            .text {
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                .block {
+                    margin-bottom: 30px;
+
+                    .title {
+                        font-size: 14px !important;
+                        font-weight: 100 !important;
+                        margin-bottom: 10px;
+                    }
+
+                    .text {
+
+                        color: var(--color-black-2);
+                    }
+                }
+
+            }
+
+            .bottom {
+                margin-top: 10px;
+                margin-bottom: 30px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                gap: 30px;
+            }
+
+            .spec{
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
 
 @media (min-width: 479px) {
@@ -2009,6 +2093,25 @@
             .question-container {
                 padding: 30px 30px 40px 30px;
             }
+        }
+    }
+
+    .footer {
+        margin-bottom: 50px;
+        .pc {
+            display: flex;
+
+            .two{
+                .block{
+                    .title{
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+
+        .mobile{
+            display: none;
         }
     }
 }
