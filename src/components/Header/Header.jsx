@@ -6,18 +6,15 @@ import {useRef} from "react";
 import useSmoothScroll from "../SmoothScroll.jsx";
 
 
-
 export const Header = () => {
     const headerRef = useRef(null);
 
     useSmoothScroll(headerRef);
     return (
         <div className="page-container header" ref={headerRef}>
-            <div>
-                <Logo/>
-                <Buttons/>
-                <SpecialBtn style={'special-button-green'}/>
-            </div>
+            <Logo/>
+            <Buttons/>
+            <SpecialBtn style={'special-button-green'}/>
             <Burger/>
         </div>
     )
