@@ -1045,8 +1045,6 @@
         }
 
         .nav {
-            display: none;
-
             padding: 20px;
 
             background-color: white;
@@ -1084,8 +1082,6 @@
         }
 
         .nav.active {
-            display: block;
-
             box-shadow: 1px 1px 600px var(--color-black-1);
 
             transform: translateX(0);
